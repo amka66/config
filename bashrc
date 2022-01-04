@@ -4,8 +4,8 @@
 # Formatting command output (only)
 alias ls='ls -GFh'
 alias tree='tree -CFh --du'
-# LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
-# LESS=' -R '
+LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+LESS="-R"
 
 # Ask confirmation before overriding
 alias cp='cp -i'
