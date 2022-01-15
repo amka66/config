@@ -1,23 +1,24 @@
-" scriptencoding utf-8
+" Set default encoding
 set encoding=utf-8
 
+" Turn on syntax highlighting
 syntax on
+
+" Turn on spell checking
 set spell spelllang=en_us
+" Change how spelling errors are shown
 hi clear SpellBad
-hi SpellBad cterm=underline
-set showbreak=↪\ 
-set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+hi SpellBad cterm=underline ctermfg=red 
+
+" Show all whitespace as characters
 set list
-set numberwidth=3
+" Change how whitespace is shown
+set showbreak=↪\ 
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:(
+
+" Show line numbers
 set number
+" Set width of line numbers
+set numberwidth=3
 
-map <Up> <Nop>
-map <Down> <Nop>
-map <Left> <Nop>
-map <Right> <Nop>
-imap <Up> <Nop>
-imap <Down> <Nop>
-imap <Left> <Nop>
-imap <Right> <Nop>
-
-nnoremap <Space> i_<Esc>r " Map space (in command mode) to inserting a single character
+" Don't forget the sensible.vim plugin [https://github.com/tpope/vim-sensible]
