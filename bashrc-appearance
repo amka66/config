@@ -1,7 +1,7 @@
 # # Format shell appearance #
 
 # Prompt
-. ~/l/xlibrary/git-prompt.sh
+. ~/l/config/git-prompt.sh
 PS1='\[\033[0;30;47m\]\u@\[\033[0;31;47m\]\h\[\033[0;30;47m\]:\[\033[1;30;47m\]\w\[\033[0;30;47m\] [$(__git_ps1 "%s")] (${CONDA_DEFAULT_ENV}) \!\[\033[m\]\n\$ '  # prompt
 
 # Commands ls and tree
