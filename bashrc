@@ -94,6 +94,7 @@ function txty {  # on work machine
 		pandoc -t plain "$1" | less
 	fi
 }  # this function adds to `open` and `less`
+alias p.='echo $PATH'
 
 # Tmux
 alias ml='tmux ls'
@@ -142,6 +143,7 @@ function sc {
 
 # Conda
 alias ce='conda info --envs'
+alias c.='echo $CONDA_DEFAULT_ENV'
 
 # Docker
 alias dil='docker image ls --all'
