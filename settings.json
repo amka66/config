@@ -1,0 +1,15 @@
+{
+    "python.analysis.typeCheckingMode": "strict",
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "vim.smartRelativeLine": true,
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#a75600"
+    },
+}
