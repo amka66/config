@@ -154,3 +154,7 @@ alias dvl='docker volume ls'
 # Jupyter  # on work machine
 alias juli='jupyter notebook list'
 alias lsofju='lsof -i @localhost:8888'
+
+# Minikube
+alias ministart='minikube start --container-runtime=docker --vm=true'
+alias miniset='eval $(minikube docker-env)'
