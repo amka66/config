@@ -61,10 +61,10 @@ function pull {
 	dvc checkout
 }
 function push {
-	echo '--- DVC PUSH ---' &&
-	dvc push --run-cache &&
 	echo '--- GIT PUSH ---' &&
-	git push
+	git push &&
+	echo '--- DVC PUSH ---' &&
+	dvc push --run-cache
 }
 
 # Conda
