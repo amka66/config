@@ -71,6 +71,9 @@ function push {
 function ca {
 	conda deactivate && conda activate "${1}" && echo "${PATH}"
 }
+function cda {
+	cdl ${1} && ca ${1}
+}
 
 # Jupyter # on work machine
 alias jufg='jupyter notebook  --no-browser --ip=127.0.0.1 --port=8888 --port-retries=0 ~'
@@ -108,6 +111,7 @@ alias gl='git log --name-status'
 alias glg='git log --graph --oneline --all'
 alias grl='git reflog --name-status'
 alias gsl='git stash list --name-status'
+alias grgi='git restore *.gitignore'
 
 # DVC
 alias ds='dvc status'
